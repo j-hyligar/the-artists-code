@@ -1,0 +1,14 @@
+body{
+  background-color: #F2E6D8
+}
+
+.sparkle{
+  display: flex;
+}
+
+.obj1{
+  width: 50;
+  height: 50;
+  background-color: #FAA7B9;
+  rotate: -45deg;
+}
