@@ -1,3 +1,5 @@
+
+
 body{
   background-color: #F2E6D8
 }
@@ -6,9 +8,46 @@ body{
   display: flex;
 }
 
-.obj1{
+.obj1,.obj2, .obj3, .obj4{
   width: 50;
   height: 50;
-  background-color: #FAA7B9;
   rotate: -45deg;
+  margin: 30px;
+/*   animation: run 1s infinite ease-in-out; */
+}
+
+.obj1{
+  background-color: #FAA7B9;
+}
+
+.obj2{
+  background-color: #9AE69A;
+}
+
+.obj3{
+  background-color: #9AC8E6;
+}
+
+.obj4{
+  background-color: #F7E199;
+}
+
+.control{
+  position: fixed;
+  bottom: 30px;
+}
+
+@keyframes run{
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(750px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
