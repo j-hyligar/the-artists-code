@@ -13,7 +13,7 @@ body{
   height: 50;
   rotate: -45deg;
   margin: 30px;
-/*   animation: run 1s infinite ease-in-out; */
+  animation: run 2s infinite;
 }
 
 .obj1{
@@ -39,15 +39,15 @@ body{
 
 @keyframes run{
   0% {
-    transform: translateY(0);
+    transform: translateY(0) translateX(0);
     opacity: 1;
   }
   50% {
-    transform: translateY(750px);
+    transform: translateY(750px) translateX(-700px);
     opacity: 0;
   }
   100% {
-    transform: translateY(0px);
-    opacity: 1;
+    transform: translateY(0) translateX(0);
+    opacity: 0;
   }
 }
