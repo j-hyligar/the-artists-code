@@ -13,23 +13,26 @@ body{
   height: 50;
   rotate: -45deg;
   margin: 30px;
-  animation: run 2s infinite;
 }
 
 .obj1{
   background-color: #FAA7B9;
+  animation: run 1s infinite linear;
 }
 
 .obj2{
   background-color: #9AE69A;
+  animation: run 2s infinite linear;
 }
 
 .obj3{
   background-color: #9AC8E6;
+  animation: run 0.5s infinite linear;
 }
 
 .obj4{
   background-color: #F7E199;
+  animation: run 3s infinite linear;
 }
 
 .control{
@@ -39,15 +42,27 @@ body{
 
 @keyframes run{
   0% {
-    transform: translateY(0) translateX(0);
+    transform: translateY(0px) translateX(0px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateY(100px) translateX(-100px);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translateY(300px) translateX(-300px);
     opacity: 1;
   }
   50% {
-    transform: translateY(750px) translateX(-700px);
-    opacity: 0;
+    transform: translateY(500px) translateX(-500px);
+    opacity: 0.5;
   }
   100% {
-    transform: translateY(0) translateX(0);
+    transform: translateY(700px) translateX(-700px);
     opacity: 0;
   }
+/*   100% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  } */
 }
