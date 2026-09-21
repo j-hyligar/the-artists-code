@@ -30,6 +30,10 @@ p{
   font-size: 50px;
 }
 
+.text:hover{
+  animation: sway 3s infinite linear;
+}
+
 .stars{
   z-index: 10;
 }
@@ -226,4 +230,31 @@ p{
   100% {
     rotate: 360deg;
   }
+}
+
+@keyframes sway{
+  0%{
+    transform: translateY(0px), translateX(0px);
+  }
+  10% {
+    transform: translateX(1px);
+  }
+  25% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateX(-2px);
+  }
+  75% {
+    transform: translateY(2px);
+  }
+  90% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-1px);
+  }
+/*   100% {
+    transform: translateY(0px), translateX(0px);
+  } */
 }
