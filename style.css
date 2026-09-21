@@ -1,9 +1,16 @@
 
 
 body{
-  background-color: #0D1129;
+/*   radial-gradient creates gradiated colors around a center point, 
+  this one is automatic to the center of the piece */
+  background: radial-gradient(#1A3053, #0D1129);
   font-family: Micro5, serif;
   height: 100%;
+}
+
+audio{
+  opacity: 0.5;
+  box-shadow: 1px 1px 20px #47B9FF;
 }
 
 p{
@@ -26,7 +33,7 @@ p{
   align-items: center;
   justify-content: center;
   color: white;
-  text-shadow: 1px 1px 25px blue;
+  text-shadow: 1px 1px 25px #47B9FF;
   font-size: 50px;
 }
 
@@ -90,7 +97,7 @@ p{
 
 .star2{
   position: relative;
-  top: 5px;
+  top: 50px;
   left: 600px;
 }
 
@@ -106,7 +113,19 @@ p{
   right: -400px;
 }
 
-.star1, .star2, .star3, .star4{
+.star5{
+  position: relative;
+  bottom: -600px;
+  right: -50px;
+}
+
+.star6{
+  position: relative;
+  bottom: -950px;
+  right: -800px;
+}
+
+.star1, .star2, .star3, .star4, .star5, .star6{
   width: 15;
   height: 15;
   rotate: -45deg;
@@ -114,7 +133,7 @@ p{
   opacity: 0.3;
 }
 
-.star1:hover, .star2:hover, .star3:hover, .star4:hover{
+.star1:hover, .star2:hover, .star3:hover, .star4:hover, .star5:hover, .star6:hover{
   animation: spin 0.5s infinite linear;
 }
 
@@ -155,7 +174,7 @@ p{
 
 .obj8{
   background-color: #8FBF8C;
-  animation: run 0.3s infinite linear;
+  animation: run 0.4s infinite linear;
 }
 
 .control{
@@ -165,6 +184,7 @@ p{
   justify-content: center;
   color: white;
   font-size: 20px;
+  bottom: 60px;
 }
 
 .micro-5-regular {
@@ -194,10 +214,6 @@ p{
     transform: translateY(700px) translateX(-700px);
     opacity: 0;
   }
-/*   100% {
-    transform: translateY(0) translateX(0);
-    opacity: 0;
-  } */
 }
 
 @keyframes run-line{
@@ -252,9 +268,6 @@ p{
     transform: translateX(2px);
   }
   100% {
-    transform: translateX(-1px);
+    transform: translateX(0px);
   }
-/*   100% {
-    transform: translateY(0px), translateX(0px);
-  } */
 }
